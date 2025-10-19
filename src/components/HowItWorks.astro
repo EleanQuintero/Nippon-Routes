@@ -1,0 +1,62 @@
+---
+import { Map, Calendar, Compass, Sparkles } from "lucide-react";
+
+const features = [
+  {
+    icon: Map,
+    title: "Personalized Itineraries",
+    description:
+      "Get a custom 7-day travel plan tailored to your interests, budget, and travel style.",
+  },
+  {
+    icon: Calendar,
+    title: "Day-by-Day Planning",
+    description:
+      "Detailed daily schedules with optimal routes, transportation options, and timing suggestions.",
+  },
+  {
+    icon: Compass,
+    title: "Hidden Gems",
+    description:
+      "Discover local favorites and off-the-beaten-path attractions not found in typical guidebooks.",
+  },
+  {
+    icon: Sparkles,
+    title: "Seasonal Recommendations",
+    description:
+      "Experience the best of Japan with suggestions optimized for your travel dates.",
+  },
+];
+---
+
+<section id="HowItWorks" class="relative py-20 min-h-screen flex items-center">
+  <div class="container mx-auto px-4 relative z-20">
+    <div class="bg-white/70 backdrop-blur-sm p-8 rounded-xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8 text-accent-500">
+          El camino hacia tu Japón soñado comienza aquí
+        </h2>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"
+      >
+        {
+          features.map((feature) => {
+            const IconComponent = feature.icon;
+            return (
+              <div class="flex flex-col items-center text-center p-4 border border-white/30 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm">
+                <div class="mb-4">
+                  <IconComponent className="w-10 h-10 text-accent-500" />
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-primary-700">
+                  {feature.title}
+                </h3>
+                <p class="text-gray-700">{feature.description}</p>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</section>
