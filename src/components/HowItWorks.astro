@@ -1,61 +1,102 @@
 ---
 import { Map, Calendar, Compass, Sparkles } from "lucide-react";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "./ui/card";
 
 const features = [
   {
     icon: Map,
-    title: "Personalized Itineraries",
+    title: "Itinerarios Hechos Para Ti",
     description:
-      "Get a custom 7-day travel plan tailored to your interests, budget, and travel style.",
+      "Recibe un plan de viaje de 7 días diseñado especialmente para tus intereses, tu presupuesto y tu forma de vivir Japón. No hay dos viajes iguales, porque no hay dos soñadores iguales.",
+    microDescription: "Tu Japón, a tu manera.",
   },
   {
     icon: Calendar,
-    title: "Day-by-Day Planning",
+    title: "Cada Día, Perfectamente Planeado",
     description:
-      "Detailed daily schedules with optimal routes, transportation options, and timing suggestions.",
+      "Horarios detallados, rutas optimizadas, opciones de transporte y sugerencias de timing para que no pierdas ni un momento. Todo pensado para que solo tengas que dejarte llevar.",
+    microDescription: "Sin dudas. Sin improvisaciones. Solo experiencias.",
   },
   {
     icon: Compass,
-    title: "Hidden Gems",
+    title: "Más Allá de lo Turístico",
     description:
-      "Discover local favorites and off-the-beaten-path attractions not found in typical guidebooks.",
+      "Descubre rincones locales y experiencias auténticas que no encontrarás en ninguna guía convencional. Los lugares que solo conocen quienes realmente aman Japón.",
+    microDescription: "El Japón que pocos descubren.",
   },
   {
     icon: Sparkles,
-    title: "Seasonal Recommendations",
+    title: "El Mejor Momento Para Tu Viaje",
     description:
-      "Experience the best of Japan with suggestions optimized for your travel dates.",
+      "Vive Japón en su máximo esplendor con sugerencias adaptadas a tus fechas de viaje. Desde los cerezos en flor hasta los colores del otoño, cada estación cuenta su propia historia.",
+    microDescription: "Japón te espera en su mejor versión.",
   },
 ];
 ---
 
 <section id="HowItWorks" class="relative py-20 min-h-screen flex items-center">
   <div class="container mx-auto px-4 relative z-20">
-    <div class="bg-white/70 backdrop-blur-sm p-8 rounded-xl">
+    <div class="bg-white/60 backdrop-blur-sm p-8 rounded-xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold text-center mb-8 text-accent-500">
           El camino hacia tu Japón soñado comienza aquí
         </h2>
       </div>
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"
       >
         {
           features.map((feature) => {
             const IconComponent = feature.icon;
             return (
-              <div class="flex flex-col items-center text-center p-4 border border-white/30 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm">
-                <div class="mb-4">
-                  <IconComponent className="w-10 h-10 text-accent-500" />
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-primary-700">
-                  {feature.title}
-                </h3>
-                <p class="text-gray-700">{feature.description}</p>
-              </div>
+              <Card className="h-full">
+                <CardHeader className="pb-3 flex flex-col items-center text-center">
+                  <div class="mb-3 w-16 h-16 rounded-full bg-accent-100 flex items-center justify-center">
+                    <IconComponent className="w-8 h-8 text-red-700" />
+                  </div>
+                  <CardTitle className="text-lg font-semibold mb-2">
+                    {feature.title}
+                  </CardTitle>
+                  <CardDescription className="text-sm leading-relaxed">
+                    {feature.microDescription}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p class="text-sm text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
             );
           })
         }
+      </div>
+      <div class="mt-16 text-center flex flex-col items-center justify-center">
+        <div
+          class="inline-block bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg"
+        >
+          <h3 class="text-xl font-semibold mb-4">
+            Deja de planificar. Empieza a vivir.
+          </h3>
+          <div class="flex flex-col items-center justify-center flex-1">
+            <img
+              src="/src/assets/howitworks.png"
+              alt=""
+              class="w-40 h-40 aspect-square animate-zoom-in"
+            />
+          </div>
+          <button
+            class="bg-red-500 hover:bg-red-700 text-white px-6 py-2 rounded-full transition-colors duration-300"
+          >
+            Ver itinerarios disponibles
+          </button>
+        </div>
       </div>
     </div>
   </div>
