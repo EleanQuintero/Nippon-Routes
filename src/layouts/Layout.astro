@@ -1,21 +1,232 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title = "Nippon Routes | Tu Viaje Perfecto a Japón en 7 Días - Itinerarios Personalizados Tokyo, Kyoto, Osaka",
+  description = "Descubre Japón con itinerarios personalizados de 7 días. Planifica tu viaje perfecto a Tokyo, Kyoto y Osaka con rutas optimizadas, experiencias auténticas y guías locales. Sin dudas, sin esperas. ¡Empieza tu aventura japonesa hoy!",
+  image = "https://res.cloudinary.com/dygwnv56x/image/upload/v1760989398/logo_vl6fqs.webp",
+  canonicalURL = new URL(Astro.url.pathname, Astro.site),
+} = Astro.props;
+
+const siteURL = Astro.site || "https://nipponroutes.com";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="viaje a Japón, itinerario Japón 7 días, guía Japón, Tokyo, Kyoto, Osaka, viaje personalizado Japón, turismo Japón, que ver en Japón, planificar viaje Japón, rutas Japón, experiencias auténticas Japón, templos Japón, gastronomía japonesa, cultura japonesa, cerezos en flor, itinerarios personalizados, guía turística Japón"
+    />
+    <meta name="author" content="Nippon Routes" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="JP" />
+    <meta name="geo.placename" content="Japan" />
+
+    <!-- Language Alternatives -->
+    <link rel="alternate" hreflang="es" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Nippon Routes" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+    <meta name="twitter:creator" content="@nipponroutes" />
+
+    <!-- Favicon -->
     <link
       rel="icon"
-      type="image/svg+xml"
+      type="image/webp"
       href="https://res.cloudinary.com/dygwnv56x/image/upload/v1760989398/logo_vl6fqs.webp"
     />
+    <link
+      rel="apple-touch-icon"
+      href="https://res.cloudinary.com/dygwnv56x/image/upload/v1760989398/logo_vl6fqs.webp"
+    />
+
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#dc2626" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Nippon Routes" />
+
+    <!-- Humans.txt -->
+    <link rel="author" href="/humans.txt" />
+
+    <!-- Generator -->
     <meta name="generator" content={Astro.generator} />
+    <!-- DNS Prefetch & Preconnect -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Nippon Routes</title>
+
+    <!-- Schema.org markup for Google -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        name: "Nippon Routes",
+        description: description,
+        url: siteURL,
+        logo: image,
+        image: image,
+        telephone: "+34-XXX-XXX-XXX",
+        email: "info@nipponroutes.com",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "ES",
+        },
+        areaServed: [
+          {
+            "@type": "Place",
+            name: "Tokyo",
+          },
+          {
+            "@type": "Place",
+            name: "Kyoto",
+          },
+          {
+            "@type": "Place",
+            name: "Osaka",
+          },
+        ],
+        priceRange: "€€€",
+        sameAs: [
+          "https://www.facebook.com/nipponroutes",
+          "https://www.instagram.com/nipponroutes",
+          "https://twitter.com/nipponroutes",
+        ],
+      })}
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Nippon Routes",
+        url: siteURL,
+        description: description,
+        publisher: {
+          "@type": "Organization",
+          name: "Nippon Routes",
+          logo: {
+            "@type": "ImageObject",
+            url: image,
+          },
+        },
+        potentialAction: {
+          "@type": "SearchAction",
+          target: `${siteURL}/search?q={search_term_string}`,
+          "query-input": "required name=search_term_string",
+        },
+      })}
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Inicio",
+            item: siteURL,
+          },
+        ],
+      })}
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "¿Cuántos días necesito para visitar Japón?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Recomendamos un mínimo de 7 días para disfrutar de las principales ciudades como Tokyo, Kyoto y Osaka. Este tiempo permite experimentar tanto la cultura tradicional como la modernidad japonesa sin sentirse apurado.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "¿Cuál es la mejor época para viajar a Japón?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "La primavera (marzo-mayo) para ver los cerezos en flor y el otoño (septiembre-noviembre) para el follaje de colores son las temporadas más populares. Sin embargo, cada estación ofrece experiencias únicas.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "¿Necesito hablar japonés para viajar a Japón?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "No es necesario. Con nuestros itinerarios detallados y las señalizaciones en inglés en las principales ciudades, podrás moverte fácilmente. Además, incluimos frases útiles y consejos culturales.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "¿Qué incluye un itinerario personalizado de Nippon Routes?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Cada itinerario incluye rutas diarias optimizadas, sugerencias de transporte, recomendaciones de restaurantes locales, horarios detallados, experiencias culturales auténticas y consejos prácticos adaptados a tus intereses y presupuesto.",
+            },
+          },
+        ],
+      })}
+    />
   </head>
   <body>
     <slot />

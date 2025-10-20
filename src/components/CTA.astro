@@ -2,17 +2,26 @@
 
 ---
 
-<section class="relative py-20 min-h-screen flex items-center">
+<section
+  class="relative py-20 min-h-screen flex items-center"
+  aria-labelledby="cta-heading"
+>
   <div class="container mx-auto px-4 relative z-20">
     <div
       class="max-w-4xl mx-auto bg-white/60 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 text-center"
     >
       <img
         src="https://res.cloudinary.com/dygwnv56x/image/upload/v1760989397/CTA_ahascc.webp"
-        alt="Animated Japan travel mascot"
+        alt="Mascota animada de Nippon Routes invitándote a comenzar tu aventura a Japón con itinerarios personalizados"
         class="w-64 h-64 mx-auto mb-6"
+        width="256"
+        height="256"
+        loading="lazy"
       />
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+      <h2
+        id="cta-heading"
+        class="text-3xl md:text-4xl font-bold text-gray-800 mb-4"
+      >
         ¿Listo Para Tu Aventura Japonesa?
       </h2>
       <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
@@ -22,11 +31,13 @@
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <button
           class="bg-pink-300 hover:bg-pink-500 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors duration-300 shadow-lg"
+          aria-label="Comenzar a planificar tu viaje a Japón ahora"
         >
           Empieza Tu Viaje Ahora
         </button>
         <button
           class="bg-white/20 backdrop-blur-sm border-2 border-peach text-peach hover:bg-white hover:text-pink-300 px-8 py-3 rounded-full text-lg font-medium transition-colors duration-300"
+          aria-label="Conocer más sobre nuestros servicios de itinerarios a Japón"
         >
           Conoce Más
         </button>

@@ -2,7 +2,7 @@
 
 ---
 
-<footer class="relative py-12">
+<footer class="relative py-12" role="contentinfo">
   <div class="container mx-auto px-4 relative z-20">
     <div class="bg-white/70 backdrop-blur-sm rounded-xl p-8">
       <div
@@ -14,11 +14,25 @@
             El inicio de tu historia japonesa comienza aquí. Itinerarios
             personalizados para que vivas lo que siempre imaginaste.
           </p>
+          <address class="text-gray-600 not-italic">
+            <p>
+              Email: <a
+                href="mailto:info@nipponroutes.com"
+                class="hover:text-pink-400">info@nipponroutes.com</a>
+            </p>
+          </address>
         </div>
       </div>
       <div class="border-t border-gray-300 pt-8 text-center">
         <p class="text-gray-600 text-sm">
-          © {new Date().getFullYear()} NipponRoutes. All rights reserved.
+          © {new Date().getFullYear()} NipponRoutes. Todos los derechos reservados.
+          |
+          <a href="/privacy" class="hover:text-pink-400 ml-2"
+            >Política de Privacidad</a
+          > |
+          <a href="/terms" class="hover:text-pink-400 ml-2"
+            >Términos y Condiciones</a
+          >
         </p>
       </div>
     </div>

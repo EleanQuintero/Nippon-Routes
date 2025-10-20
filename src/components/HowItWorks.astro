@@ -40,24 +40,34 @@ const features = [
 ];
 ---
 
-<section id="HowItWorks" class="relative py-20 min-h-screen flex items-center">
+<section
+  id="HowItWorks"
+  class="relative py-20 min-h-screen flex items-center"
+  aria-labelledby="howitworks-heading"
+>
   <div class="container mx-auto px-4 relative z-20">
     <div class="bg-white/60 backdrop-blur-sm p-8 rounded-xl">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-center mb-8 text-accent-500">
+      <header class="text-center mb-16">
+        <h2
+          id="howitworks-heading"
+          class="text-3xl font-bold text-center mb-8 text-accent-500"
+        >
           El camino hacia tu Japón soñado comienza aquí
         </h2>
-      </div>
+      </header>
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"
       >
         {
-          features.map((feature) => {
+          features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
               <Card className="h-full bg-white/80">
                 <CardHeader className="pb-3 flex flex-col items-center text-center">
-                  <div class="mb-3 w-16 h-16 rounded-full bg-accent-100 flex items-center justify-center">
+                  <div
+                    class="mb-3 w-16 h-16 rounded-full bg-accent-100 flex items-center justify-center"
+                    aria-hidden="true"
+                  >
                     <IconComponent className="w-8 h-8 text-red-700" />
                   </div>
                   <CardTitle className="text-lg font-semibold mb-2">
@@ -77,7 +87,9 @@ const features = [
           })
         }
       </div>
-      <div class="mt-16 text-center flex flex-col items-center justify-center">
+      <footer
+        class="mt-16 text-center flex flex-col items-center justify-center"
+      >
         <div
           class="inline-block bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg"
         >
@@ -87,17 +99,21 @@ const features = [
           <div class="flex flex-col items-center justify-center flex-1">
             <img
               src="https://res.cloudinary.com/dygwnv56x/image/upload/v1760989398/howitworks_xcmyvf.webp"
-              alt=""
+              alt="Ilustración del proceso de planificación de viajes a Japón mostrando los pasos para crear itinerarios personalizados"
               class="w-40 h-40 aspect-square animate-scale"
+              width="160"
+              height="160"
+              loading="lazy"
             />
           </div>
           <button
             class="bg-red-500 hover:bg-red-700 text-white px-6 py-2 rounded-full transition-colors duration-300"
+            aria-label="Ver itinerarios disponibles para viajar a Japón"
           >
             Ver itinerarios disponibles
           </button>
         </div>
-      </div>
+      </footer>
     </div>
   </div>
 </section>

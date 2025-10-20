@@ -1,0 +1,29 @@
+{
+  "name": "Nippon Routes - Tu Viaje Perfecto a Japón",
+  "short_name": "Nippon Routes",
+  "description": "Descubre Japón con itinerarios personalizados de 7 días. Planifica tu viaje perfecto a Tokyo, Kyoto y Osaka.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dygwnv56x/image/upload/v1760989398/logo_vl6fqs.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/dygwnv56x/image/upload/v1760989398/logo_vl6fqs.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "tourism", "lifestyle"],
+  "lang": "es-ES",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": []
+}

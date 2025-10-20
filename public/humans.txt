@@ -1,0 +1,26 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Creator/Developer -- Your Name
+    Site: https://nipponroutes.com
+    Location: España
+
+# THANKS
+    To all travelers who dream of Japan
+    To the Japanese culture and people
+
+# TECHNOLOGY COLOPHON
+    Standards: HTML5, CSS3
+    Components: Astro, React, TailwindCSS
+    Frameworks: Astro 5.x
+    Fonts: Noto Sans JP
+    Tools: VS Code, Git
+    Hosting: [Your hosting provider]
+    CDN: Cloudinary
+
+# SITE
+    Last update: 2025/01/20
+    Language: Español / Spanish
+    Doctype: HTML5
+    IDE: Visual Studio Code

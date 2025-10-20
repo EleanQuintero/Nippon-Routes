@@ -10,6 +10,7 @@ const destinations = [
       "Vive la fusión perfecta entre la tradición milenaria y el futuro más vibrante. Tokyo es ese lugar donde los templos al amanecer conviven con neones que nunca duermen, donde cada esquina te recuerda por qué soñabas con estar aquí.",
     microDescription: "La ciudad que nunca dejaste de imaginar.",
     cta: "Empieza tu gran escape en Tokyo",
+    alt: "Vista panorámica de Tokyo con el Monte Fuji al fondo, mostrando la mezcla de modernidad y tradición japonesa con templos antiguos y rascacielos iluminados",
   },
   {
     name: "Kyoto",
@@ -19,6 +20,7 @@ const destinations = [
       "Regresa al Japón de tus sueños más serenos. Templos ancestrales, casas de té donde el tiempo se detiene, jardines que parecen pinturas y calles que guardan mil años de historias. Kyoto no se visita, se siente.",
     microDescription: "El alma de Japón te espera aquí.",
     cta: "Encuentra tu paz en Kyoto",
+    alt: "Templos tradicionales de Kyoto rodeados de jardines zen y cerezos en flor, capturando la esencia histórica y espiritual de la antigua capital de Japón",
   },
   {
     name: "Osaka",
@@ -28,6 +30,7 @@ const destinations = [
       "Sumérgete en la energía más auténtica de Japón. Calles repletas de vida, gastronomía que enamora a cada bocado y noches vibrantes que te hacen sentir parte de algo más grande. Osaka es el paraíso de quienes aman vivir intensamente.",
     microDescription: "Donde el sabor y la emoción se encuentran.",
     cta: "Siente el latido de Osaka",
+    alt: "Calles iluminadas del distrito Dotonbori en Osaka con sus icónicos carteles de neón, mostrando la vibrante vida nocturna y la rica cultura gastronómica de la ciudad",
   },
 ];
 ---
@@ -35,12 +38,15 @@ const destinations = [
 <section
   id="destinations"
   class="relative py-20 min-h-screen flex items-center"
+  aria-labelledby="destinations-heading"
 >
-  {/* Semi-transparent container for better readability */}
   <div class="container mx-auto px-4 relative z-20">
     <div class="bg-white/60 backdrop-blur-sm p-8 rounded-xl">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+      <header class="text-center mb-16">
+        <h2
+          id="destinations-heading"
+          class="text-3xl md:text-4xl font-bold text-black mb-4"
+        >
           Tres Ciudades. Infinitas Experiencias. Un Solo Viaje Perfecto.
         </h2>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
@@ -50,11 +56,14 @@ const destinations = [
         <div class="flex flex-col items-center justify-center flex-1">
           <img
             src="https://res.cloudinary.com/dygwnv56x/image/upload/v1760989400/destinations_g8hcjf.webp"
-            alt=""
+            alt="Mapa ilustrado de Japón destacando las principales ciudades turísticas: Tokyo, Kyoto y Osaka, con iconos representativos de cada destino"
             class="w-56 h-56 aspect-square animate-scale"
+            width="224"
+            height="224"
+            loading="lazy"
           />
         </div>
-      </div>
+      </header>
       <div class="relative">
         <div class="flex overflow-hidden">
           <div
@@ -62,30 +71,44 @@ const destinations = [
           >
             {
               destinations.map((destination) => (
-                <div class=" flex flex-col md:flex-row min-w-[33.333%] px-4 mb-20">
+                <article
+                  class=" flex flex-col md:flex-row min-w-[33.333%] px-4 mb-20"
+                  itemscope
+                  itemtype="https://schema.org/TouristDestination"
+                >
                   <div class="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
                     <img
                       src={destination.image}
-                      alt={destination.name}
+                      alt={destination.alt}
                       class="w-full h-48 object-cover aspect-square"
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                      itemprop="image"
                     />
                     <div class="p-6">
-                      <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                      <h3
+                        class="text-xl font-semibold text-gray-800 mb-3"
+                        itemprop="name"
+                      >
                         {destination.name}
                       </h3>
-                      <p class="text-gray-700 mb-4">
+                      <p class="text-gray-700 mb-4" itemprop="description">
                         {destination.description}
                       </p>
                       <p class="text-gray-900 mb-4">
                         {destination.microDescription}
                       </p>
-                      <button class="text-red-800 font-medium hover:underline">
+                      <button
+                        class="text-red-800 font-medium hover:underline"
+                        aria-label={`${destination.cta} - Explorar itinerario de ${destination.name}`}
+                      >
                         {destination.cta}{" "}
                         <ChevronRight className="inline-block w-4 h-4 ml-1" />
                       </button>
                     </div>
                   </div>
-                </div>
+                </article>
               ))
             }
           </div>
