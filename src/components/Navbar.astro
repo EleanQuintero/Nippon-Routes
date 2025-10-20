@@ -1,0 +1,181 @@
+---
+import { Menu, X } from "lucide-react";
+---
+
+<nav
+  id="navbar"
+  class="fixed top-0 z-50 w-full transition-all duration-300 bg-transparent"
+>
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex flex-row items-center">
+      <a
+        href="#"
+        class="text-2xl font-bold text-white drop-shadow-md hover:text-pink-400"
+      >
+        NipponRoutes
+      </a>
+      <div class="flex">
+        <img src="/src/assets/logo.png" alt="" class="w-20 h-20" />
+      </div>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a
+        href="#howitworks"
+        class="text-white hover:text-pink-400 transition-colors duration-300 drop-shadow-md"
+      >
+        Como funciona
+      </a>
+      <a
+        href="#destinations"
+        class="text-white hover:text-pink-400 transition-colors duration-300 drop-shadow-md"
+      >
+        Destinos
+      </a>
+      <a
+        href="#testimonials"
+        class="text-white hover:text-pink-400 transition-colors duration-300 drop-shadow-md"
+      >
+        Testimonios
+      </a>
+      <a
+        href="#"
+        class="text-white hover:text-pink-400 transition-colors duration-300 drop-shadow-md"
+      >
+        Blog
+      </a>
+      <button
+        class="bg-white/20 backdrop-blur-sm border-2 border-white text-white px-5 py-2 rounded-full hover:bg-white hover:text-red-600 transition-colors duration-300"
+      >
+        Iniciar Sesion
+      </button>
+      <button
+        class="bg-red-500 text-white px-5 py-2 rounded-full hover:bg-red-700 transition-colors duration-300"
+      >
+        Empieza Ahora
+      </button>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button
+        id="mobile-menu-button"
+        class="text-white focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <Menu id="menu-icon" className="w-6 h-6" />
+        <X id="close-icon" className="w-6 h-6 hidden" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-black/80 backdrop-blur-md border-t border-gray-800 px-4 py-2"
+  >
+    <div class="flex flex-col space-y-3 py-3">
+      <a
+        href="#features"
+        class="text-white hover:text-pink-400 transition-colors duration-300 py-2 mobile-menu-link"
+      >
+        Como funciona
+      </a>
+      <a
+        href="#destinations"
+        class="text-white hover:text-pink-400 transition-colors duration-300 py-2 mobile-menu-link"
+      >
+        Destinos
+      </a>
+      <a
+        href="#testimonials"
+        class="text-white hover:text-pink-400 transition-colors duration-300 py-2 mobile-menu-link"
+      >
+        Testimonios
+      </a>
+      <a
+        href="#"
+        class="text-white hover:text-pink-400 transition-colors duration-300 py-2 mobile-menu-link"
+      >
+        Blog
+      </a>
+      <button
+        class="bg-white/20 backdrop-blur-sm border-2 border-white text-white px-5 py-2 rounded-full hover:bg-white hover:text-japanRed transition-colors duration-300 w-full mt-2"
+      >
+        Iniciar Sesion
+      </button>
+      <button
+        class="bg-japanRed text-white px-5 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 w-full"
+      >
+        Empieza Ahora
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Manejo del scroll para el efecto de backdrop
+  function handleScroll() {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return;
+
+    if (window.scrollY > 50) {
+      navbar.classList.remove("bg-transparent");
+      navbar.classList.add("bg-black/30", "backdrop-blur-sm");
+    } else {
+      navbar.classList.remove("bg-black/30", "backdrop-blur-sm");
+      navbar.classList.add("bg-transparent");
+    }
+  }
+
+  // Manejo del menú móvil
+  function setupMobileMenu() {
+    const menuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    const closeIcon = document.getElementById("close-icon");
+    const mobileLinks = document.querySelectorAll(".mobile-menu-link");
+
+    if (!menuButton || !mobileMenu || !menuIcon || !closeIcon) return;
+
+    // Toggle del menú
+    menuButton.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+
+      if (isOpen) {
+        mobileMenu.classList.add("hidden");
+        menuIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+      } else {
+        mobileMenu.classList.remove("hidden");
+        menuIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+      }
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+      });
+    });
+  }
+
+  // Inicializar cuando el DOM esté listo
+  document.addEventListener("DOMContentLoaded", () => {
+    setupMobileMenu();
+    handleScroll(); // Ejecutar una vez al cargar
+  });
+
+  // Escuchar el evento de scroll
+  window.addEventListener("scroll", handleScroll);
+
+  // Reinicializar después de cada navegación (para SPAs)
+  document.addEventListener("astro:after-swap", () => {
+    setupMobileMenu();
+    handleScroll();
+  });
+</script>
