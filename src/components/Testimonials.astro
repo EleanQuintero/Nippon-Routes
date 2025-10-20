@@ -1,0 +1,80 @@
+---
+import TestimonialsCarousel from "./TestimonialsCarousel";
+
+const testimonials = [
+  {
+    name: "Sofía Martínez",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    content:
+      "NipponRoutes hizo que nuestro viaje familiar a Japón fuera absolutamente mágico. El itinerario personalizado equilibró perfectamente los lugares turísticos imprescindibles con joyas locales escondidas que nunca habríamos encontrado por nuestra cuenta. Mis hijos no paraban de hablar de los mapas interactivos, y yo simplemente disfruté sin tener que preocuparme por nada.",
+    location: "Barcelona, España",
+    microDescription: "De planificar por meses a vivir sin preocupaciones.",
+  },
+  {
+    name: "Carlos Mendoza",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    content:
+      "Como viajero solo, tenía miedo de perderme entre tanta información y opciones. Pero el itinerario día a día de NipponRoutes fue increíblemente detallado y fácil de seguir. Descubrí rincones de Kyoto que jamás hubiera encontrado solo, y cada día fluía perfectamente. Por fin pude dejar de planificar y empezar a sentir.",
+    location: "Ciudad de México, México",
+    microDescription: "Del miedo a perderse, al placer de encontrarse.",
+  },
+  {
+    name: "Yuki Tanaka",
+    avatar:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+    content:
+      "Incluso siendo japonesa viviendo en el extranjero, quedé sorprendida por las experiencias únicas que NipponRoutes sugirió para mi visita a casa. Me ayudó a redescubrir mi propio país de formas que nunca imaginé. Cada rincón tenía una historia, cada momento se sintió especial. Volví a enamorarme de Japón.",
+    location: "Buenos Aires, Argentina",
+    microDescription: "Redescubrió su hogar con ojos nuevos.",
+  },
+  {
+    name: "Laura y Miguel Rodríguez",
+    avatar:
+      "https://images.unsplash.com/photo-1563010445-9bda500ded03?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+    content:
+      "Llevábamos 5 años diciendo 'algún día iremos a Japón'. Cuando encontramos NipponRoutes, ese 'algún día' finalmente se convirtió en realidad. Los 7 días estuvieron perfectamente planeados: desde el amanecer en Fushimi Inari hasta las luces de neón en Osaka. Cada detalle contó una historia que ahora es nuestra.",
+    location: "Madrid, España",
+    microDescription: "Del 'algún día' al 'por fin'.",
+  },
+  {
+    name: "Andrés Villalobos",
+    avatar:
+      "https://images.unsplash.com/photo-1675962846216-1a676a3b1290?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+    content:
+      "Osaka era mi sueño gastronómico, pero NipponRoutes superó todas mis expectativas. No solo me llevó a los mejores restaurantes de ramen y okonomiyaki, sino también a mercados locales y puestos callejeros que solo conocen los habitantes. Cada comida fue una experiencia, cada bocado un recuerdo eterno.",
+    location: "Lima, Perú",
+    microDescription: "No solo comió. Vivió cada sabor.",
+  },
+];
+---
+
+<section
+  id="testimonials"
+  class="relative py-20 min-h-screen flex items-center"
+>
+  <div class="container mx-auto px-4 relative z-20">
+    <div class="bg-pink-400/20 backdrop-blur-sm p-8 rounded-xl">
+      <div class="text-center mb-16">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-md"
+        >
+          Ellos dejaron de soñar. Y empezaron a vivir.
+        </h2>
+        <p class="text-lg text-white max-w-2xl mx-auto drop-shadow-md">
+          Descubre cómo NipponRoutes convirtió años de anhelo en 7 días
+          inolvidables para viajeros como tú.
+        </p>
+      </div>
+      <TestimonialsCarousel client:load testimonials={testimonials} />
+      <div class="text-center mt-16">
+        <h2
+          class="text-xl md:text-4xl font-bold text-white mb-4 drop-shadow-md"
+        >
+          Tu historia comienza cuando decides vivirla.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
