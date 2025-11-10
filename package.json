@@ -9,22 +9,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.0",
-    "@astrojs/sitemap": "^3.6.0",
-    "@midudev/tailwind-animations": "^0.2.0",
-    "@radix-ui/react-slot": "^1.2.3",
+    "@astrojs/react": "4.4.2",
+    "@astrojs/sitemap": "3.6.0",
+    "@midudev/tailwind-animations": "0.2.0",
+    "@radix-ui/react-slot": "1.2.3",
     "@tailwindcss/vite": "4.1.14",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "astro": "5.14.6",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "embla-carousel-react": "^8.6.0",
-    "lucide-react": "^0.546.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "tailwind-merge": "^3.3.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "astro": "5.15.4",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "embla-carousel-react": "8.6.0",
+    "lucide-react": "0.546.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tailwind-merge": "3.3.1",
     "tailwindcss": "4.1.14",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "1.0.7"
   }
 }
