@@ -1,0 +1,850 @@
+{
+  "overview": {
+    "trip_length_days": 7,
+    "cities": ["Tokyo", "Kyoto", "Osaka"],
+    "total_estimated_budget_jpy": 150000,
+    "currency": "JPY"
+  },
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "city": "Tokyo",
+      "summary": "Llegada a Tokyo, check-in en Shinjuku y paseo corto por Shibuya/Kabukichō por la tarde-noche.",
+      "segments": [
+        {
+          "period": "mañana",
+          "activities": [
+            {
+              "name": "Llegada y traslado al hotel (Shinjuku)",
+              "type": "actividad",
+              "address": "VERIFICAR: dirección del hotel elegido en Shinjuku",
+              "coordinates": {
+                "lat": null,
+                "lon": null
+              },
+              "google_maps_url": "VERIFICAR: usar búsqueda por nombre del hotel en Google Maps",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": null,
+              "notes": "Tiempo para inmigración, recoger equipaje y check-in. Si llegas por Narita/Haneda, usar Narita Express/limousine bus o monorraíl+JR (ver logística).",
+              "transit_from_previous": {
+                "from": "Aeropuerto (Narita/Haneda)",
+                "to": "Hotel en Shinjuku",
+                "method": "tren/autobús/taxi",
+                "line_or_route": "N'EX (Narita Express) / Keisei + JR / Monorail + JR",
+                "from_station": "VERIFICAR (Narita/Haneda terminal)",
+                "to_station": "Shinjuku",
+                "estimated_time_minutes": 90,
+                "estimated_cost_jpy": 3000
+              }
+            }
+          ]
+        },
+        {
+          "period": "tarde",
+          "activities": [
+            {
+              "name": "Santuario Meiji (Meiji Jingu)",
+              "type": "templo",
+              "address": "1-1, Kamizono-cho, Yoyogi, Shibuya City, Tokyo 151-0053, Japón",
+              "coordinates": {
+                "lat": 35.675526,
+                "lon": 139.698578
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=35.675526,139.698578](https://www.google.com/maps/search/?api=1&query=35.675526,139.698578)",
+              "visit_duration_minutes": 60,
+              "entrance_fee_jpy": 0,
+              "notes": "Paseo relajado por el bosque del santuario; entrada gratuita. Ideal tras el check-in.",
+              "transit_from_previous": {
+                "from": "Hotel en Shinjuku",
+                "to": "Meiji Jingu",
+                "method": "metro + caminata",
+                "line_or_route": "JR Yamanote Line hasta Harajuku",
+                "from_station": "Shinjuku",
+                "to_station": "Harajuku",
+                "estimated_time_minutes": 12,
+                "estimated_cost_jpy": 160
+              }
+            },
+            {
+              "name": "Shibuya Crossing & Hachikō",
+              "type": "zona comercial",
+              "address": "2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japón (zona de cruce)",
+              "coordinates": {
+                "lat": 35.6595,
+                "lon": 139.70056
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=35.6595,139.70056](https://www.google.com/maps/search/?api=1&query=35.6595,139.70056)",
+              "visit_duration_minutes": 30,
+              "entrance_fee_jpy": 0,
+              "notes": "Cruce famoso y fotos; mejor verlo desde un café o el edificio de frente.",
+              "transit_from_previous": {
+                "from": "Meiji Jingu",
+                "to": "Shibuya Crossing",
+                "method": "metro/tren",
+                "line_or_route": "JR Yamanote Line Harajuku → Shibuya",
+                "from_station": "Harajuku",
+                "to_station": "Shibuya",
+                "estimated_time_minutes": 6,
+                "estimated_cost_jpy": 160
+              }
+            }
+          ]
+        },
+        {
+          "period": "noche",
+          "activities": [
+            {
+              "name": "Cena en izakaya en Kabukichō / Omoide Yokocho (Shinjuku)",
+              "type": "restaurante",
+              "address": "VERIFICAR: dirección del izakaya elegido en Shinjuku (ej. Omoide Yokocho, Shinjuku 1-chōme)",
+              "coordinates": {
+                "lat": null,
+                "lon": null
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku+Tokyo](https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku+Tokyo)",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": null,
+              "notes": "Ambiente local. Evitar restaurantes con entradas confusas; preguntar menú en inglés o mostrar app de traducción.",
+              "transit_from_previous": {
+                "from": "Shibuya",
+                "to": "Shinjuku (Kabukichō)",
+                "method": "metro/tren",
+                "line_or_route": "JR Yamanote Line Shibuya → Shinjuku",
+                "from_station": "Shibuya",
+                "to_station": "Shinjuku",
+                "estimated_time_minutes": 8,
+                "estimated_cost_jpy": 170
+              }
+            }
+          ]
+        }
+      ],
+      "alternatives_for_bad_weather": [
+        "Museo Nacional de Tokio (Ueno) — [https://www.google.com/maps/search/?api=1&query=Tokyo+National+Museum+Ueno](https://www.google.com/maps/search/?api=1&query=Tokyo+National+Museum+Ueno) (VERIFICAR dirección exacta si se reserva)",
+        "Shinjuku Isetan Food Hall (depósito gastronómico cubierto) — [https://www.google.com/maps/search/?api=1&query=Isetan+Shinjuku+Food+Hall+Tokyo](https://www.google.com/maps/search/?api=1&query=Isetan+Shinjuku+Food+Hall+Tokyo)"
+      ],
+      "end_of_day_notes": "Cena en izakaya en Shinjuku o ramen cerca del hotel. Volver al hotel en Shinjuku para descansar."
+    },
+    {
+      "day": 2,
+      "city": "Tokyo",
+      "summary": "Temas clásicos: Asakusa (Senso-ji), paseo por Sumida y subida al Tokyo Skytree; tarde en Ginza/Tsukiji.",
+      "segments": [
+        {
+          "period": "mañana",
+          "activities": [
+            {
+              "name": "Templo Sensō-ji (Asakusa)",
+              "type": "templo",
+              "address": "2 Chome-3-1 Asakusa, Taitō City, Tokyo 111-0032, Japón",
+              "coordinates": {
+                "lat": 35.71466,
+                "lon": 139.79678
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=35.71466,139.79678](https://www.google.com/maps/search/?api=1&query=35.71466,139.79678)",
+              "visit_duration_minutes": 60,
+              "entrance_fee_jpy": 0,
+              "notes": "Templo histórico y Nakamise-dori para souvenirs y snacks.",
+              "transit_from_previous": {
+                "from": "Shinjuku",
+                "to": "Asakusa",
+                "method": "metro",
+                "line_or_route": "Toei Oedo / Tokyo Metro (transfer posible)",
+                "from_station": "Shinjuku",
+                "to_station": "Asakusa",
+                "estimated_time_minutes": 30,
+                "estimated_cost_jpy": 300
+              }
+            }
+          ]
+        },
+        {
+          "period": "tarde",
+          "activities": [
+            {
+              "name": "Tokyo Skytree (observatorio)",
+              "type": "actividad",
+              "address": "1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japón",
+              "coordinates": {
+                "lat": 35.710064,
+                "lon": 139.810699
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=35.710064,139.810699](https://www.google.com/maps/search/?api=1&query=35.710064,139.810699)",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": 2000,
+              "notes": "Entrada pagada (estimado). Reservar con antelación si quieres horarios concretos.",
+              "transit_from_previous": {
+                "from": "Sensō-ji (Asakusa)",
+                "to": "Tokyo Skytree (Oshiage)",
+                "method": "caminata + metro",
+                "line_or_route": "Tobu Skytree Line o caminata (dependiendo del punto)",
+                "from_station": "Asakusa",
+                "to_station": "Oshiage",
+                "estimated_time_minutes": 15,
+                "estimated_cost_jpy": 170
+              }
+            },
+            {
+              "name": "Tsukiji Outer Market (paseo gastronómico)",
+              "type": "zona comercial",
+              "address": "4-16-2 Tsukiji, Chuo City, Tokyo 104-0045, Japón",
+              "coordinates": {
+                "lat": 35.668067,
+                "lon": 139.772693
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=35.668067,139.772693](https://www.google.com/maps/search/?api=1&query=35.668067,139.772693)",
+              "visit_duration_minutes": 60,
+              "entrance_fee_jpy": 0,
+              "notes": "Probar sushi/mercado; muchas tiendas cierran por la tarde, consultar horarios (VERIFICAR).",
+              "transit_from_previous": {
+                "from": "Tokyo Skytree",
+                "to": "Tsukiji Outer Market",
+                "method": "metro",
+                "line_or_route": "Toei Asakusa Line / Tokyo Metro (transfer)",
+                "from_station": "Oshiage",
+                "to_station": "Tsukiji / Tsukijishijo",
+                "estimated_time_minutes": 25,
+                "estimated_cost_jpy": 220
+              }
+            }
+          ]
+        },
+        {
+          "period": "noche",
+          "activities": [
+            {
+              "name": "Ginza (paseo y cena)",
+              "type": "zona comercial",
+              "address": "Ginza, Chūō City, Tokyo (zona comercial principal)",
+              "coordinates": {
+                "lat": 35.6719,
+                "lon": 139.7645
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Ginza+Tokyo](https://www.google.com/maps/search/?api=1&query=Ginza+Tokyo)",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": 0,
+              "notes": "Restaurantes y shopping; opciones desde económicas a alta cocina.",
+              "transit_from_previous": {
+                "from": "Tsukiji",
+                "to": "Ginza",
+                "method": "metro/caminata",
+                "line_or_route": "Tokyo Metro (Ginza Line corta conexión)",
+                "from_station": "Tsukiji",
+                "to_station": "Ginza",
+                "estimated_time_minutes": 10,
+                "estimated_cost_jpy": 170
+              }
+            }
+          ]
+        }
+      ],
+      "alternatives_for_bad_weather": [
+        "MUSEO Edo-Tokyo — [https://www.google.com/maps/search/?api=1&query=Edo-Tokyo+Museum+Tokyo](https://www.google.com/maps/search/?api=1&query=Edo-Tokyo+Museum+Tokyo) (cubierto)",
+        "Ginza Six (centro comercial) — [https://www.google.com/maps/search/?api=1&query=Ginza+Six](https://www.google.com/maps/search/?api=1&query=Ginza+Six)"
+      ],
+      "end_of_day_notes": "Cena en Ginza o volver a Shinjuku para izakaya. Verificar horarios de tiendas en Tsukiji."
+    },
+    {
+      "day": 3,
+      "city": "Tokyo",
+      "summary": "Día de barrios: Akihabara por la mañana, Ueno por la tarde (parques y museos) y noche en Odaiba o Roppongi.",
+      "segments": [
+        {
+          "period": "mañana",
+          "activities": [
+            {
+              "name": "Akihabara (electrónica y cultura otaku)",
+              "type": "zona comercial",
+              "address": "Akihabara, Chiyoda City, Tokyo (zona alrededor de Akihabara Station)",
+              "coordinates": {
+                "lat": 35.698353,
+                "lon": 139.773114
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Akihabara+Tokyo](https://www.google.com/maps/search/?api=1&query=Akihabara+Tokyo)",
+              "visit_duration_minutes": 120,
+              "entrance_fee_jpy": 0,
+              "notes": "Tiendas de electrónica, cafés temáticos; ideal para compras y curiosidad.",
+              "transit_from_previous": {
+                "from": "Hotel en Shinjuku",
+                "to": "Akihabara",
+                "method": "tren",
+                "line_or_route": "JR Chūō Line + transfer o JR Yamanote",
+                "from_station": "Shinjuku",
+                "to_station": "Akihabara",
+                "estimated_time_minutes": 20,
+                "estimated_cost_jpy": 200
+              }
+            }
+          ]
+        },
+        {
+          "period": "tarde",
+          "activities": [
+            {
+              "name": "Parque Ueno + Museo Nacional de Tokio (opcional)",
+              "type": "museo|parque",
+              "address": "Ueno Park, Taitō City, Tokyo 110-0007, Japón",
+              "coordinates": {
+                "lat": 35.7126,
+                "lon": 139.7745
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Ueno+Park+Tokyo](https://www.google.com/maps/search/?api=1&query=Ueno+Park+Tokyo)",
+              "visit_duration_minutes": 120,
+              "entrance_fee_jpy": 620,
+              "notes": "Museos y paseo. Entrada al museo es aproximada (VERIFICAR tarifas actuales).",
+              "transit_from_previous": {
+                "from": "Akihabara",
+                "to": "Ueno",
+                "method": "tren",
+                "line_or_route": "JR Yamanote Line Akihabara → Ueno",
+                "from_station": "Akihabara",
+                "to_station": "Ueno",
+                "estimated_time_minutes": 6,
+                "estimated_cost_jpy": 140
+              }
+            }
+          ]
+        },
+        {
+          "period": "noche",
+          "activities": [
+            {
+              "name": "Odaiba (teamLab opcional) o Roppongi (vida nocturna)",
+              "type": "actividad|zona comercial",
+              "address": "VERIFICAR: Odaiba (isla artificial) o Roppongi (zona de bares)",
+              "coordinates": {
+                "lat": null,
+                "lon": null
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo](https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo)",
+              "visit_duration_minutes": 120,
+              "entrance_fee_jpy": null,
+              "notes": "teamLab Borderless (si disponible, reservar entradas). Odaiba ofrece vistas nocturnas de la bahía.",
+              "transit_from_previous": {
+                "from": "Ueno",
+                "to": "Odaiba/Roppongi",
+                "method": "metro/tren",
+                "line_or_route": "JR+Yurikamome a Odaiba o Metro a Roppongi",
+                "from_station": "Ueno",
+                "to_station": "Shimbashi (transfer a Yurikamome) / Roppongi",
+                "estimated_time_minutes": 30,
+                "estimated_cost_jpy": 400
+              }
+            }
+          ]
+        }
+      ],
+      "alternatives_for_bad_weather": [
+        "Museo Nacional de Ciencias de Japón — [https://www.google.com/maps/search/?api=1&query=National+Museum+of+Nature+and+Science+Tokyo](https://www.google.com/maps/search/?api=1&query=National+Museum+of+Nature+and+Science+Tokyo)",
+        "Centro comercial Aqua City / DiverCity (Odaiba) — [https://www.google.com/maps/search/?api=1&query=DiverCity+Odaiba](https://www.google.com/maps/search/?api=1&query=DiverCity+Odaiba)"
+      ],
+      "end_of_day_notes": "Regresar a Shinjuku. Preparar equipaje para viaje a Kyoto al día siguiente."
+    },
+    {
+      "day": 4,
+      "city": "Transporte → Kyoto",
+      "summary": "Traslado temprano a Kyoto (shinkansen recomendado) y primeras visitas: Fushimi Inari por la tarde.",
+      "segments": [
+        {
+          "period": "mañana",
+          "activities": [
+            {
+              "name": "Trayecto Tokyo Station → Kyoto Station (Shinkansen Tokaido)",
+              "type": "actividad",
+              "address": "Tokyo Station → Kyoto Station",
+              "coordinates": {
+                "lat": 35.681236,
+                "lon": 139.767125
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Tokyo+Station](https://www.google.com/maps/search/?api=1&query=Tokyo+Station)",
+              "visit_duration_minutes": 160,
+              "entrance_fee_jpy": null,
+              "notes": "Shinkansen Nozomi/Hikari (Nozomi más rápido, no cubierto por JR Pass para algunos; Hikari recomendable si se usa JR Pass). Reserva aconsejada en temporada alta (VERIFICAR).",
+              "transit_from_previous": {
+                "from": "Hotel en Tokyo (Shinjuku)",
+                "to": "Tokyo Station",
+                "method": "metro/tren",
+                "line_or_route": "JR Chūō Line / JR Yamanote",
+                "from_station": "Shinjuku",
+                "to_station": "Tokyo",
+                "estimated_time_minutes": 20,
+                "estimated_cost_jpy": 200
+              }
+            }
+          ]
+        },
+        {
+          "period": "tarde",
+          "activities": [
+            {
+              "name": "Fushimi Inari-taisha",
+              "type": "templo",
+              "address": "68 Fukakusa Yabunouchichō, Fushimi Ward, Kyoto, 612-0882, Japón",
+              "coordinates": {
+                "lat": 34.96722,
+                "lon": 135.77278
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=34.96722,135.77278](https://www.google.com/maps/search/?api=1&query=34.96722,135.77278)",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": 0,
+              "notes": "Famoso por sus miles de torii. Subida completa puede llevar ~2 horas; ajustar según energía y tiempo.",
+              "transit_from_previous": {
+                "from": "Kyoto Station",
+                "to": "Fushimi Inari-taisha",
+                "method": "tren",
+                "line_or_route": "JR Nara Line",
+                "from_station": "Kyoto",
+                "to_station": "Inari",
+                "estimated_time_minutes": 5,
+                "estimated_cost_jpy": 150
+              }
+            }
+          ]
+        },
+        {
+          "period": "noche",
+          "activities": [
+            {
+              "name": "Paseo por Gion y cena (zona tradicional)",
+              "type": "zona comercial|actividad",
+              "address": "Gion, Higashiyama Ward, Kyoto (calles principales como Hanami-koji)",
+              "coordinates": {
+                "lat": 35.0037,
+                "lon": 135.7788
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Gion+Kyoto](https://www.google.com/maps/search/?api=1&query=Gion+Kyoto)",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": 0,
+              "notes": "Barrio histórico; posible avistamiento de maiko/geisha (no perseguir). Reservar cena si buscas restaurante específico.",
+              "transit_from_previous": {
+                "from": "Fushimi Inari",
+                "to": "Gion",
+                "method": "tren + caminata / bus",
+                "line_or_route": "JR Nara Line → local / bus",
+                "from_station": "Inari",
+                "to_station": "Gion-Shijo / Kawaramachi",
+                "estimated_time_minutes": 25,
+                "estimated_cost_jpy": 230
+              }
+            }
+          ]
+        }
+      ],
+      "alternatives_for_bad_weather": [
+        "Museo Internacional del Manga de Kyoto — [https://www.google.com/maps/search/?api=1&query=Kyoto+International+Manga+Museum](https://www.google.com/maps/search/?api=1&query=Kyoto+International+Manga+Museum) (cubierto)",
+        "Centros comerciales cerca de Kyoto Station (Porta, AEON) — buscar en Google Maps"
+      ],
+      "end_of_day_notes": "Alojamiento en Gion/Kawaramachi recomendable. Preparar día siguiente en Arashiyama y Kiyomizu."
+    },
+    {
+      "day": 5,
+      "city": "Kyoto",
+      "summary": "Clásicos de Kyoto: Arashiyama por la mañana, Kinkaku-ji y Kiyomizu-dera por la tarde.",
+      "segments": [
+        {
+          "period": "mañana",
+          "activities": [
+            {
+              "name": "Arashiyama Bamboo Grove + Tenryu-ji",
+              "type": "parque|templo",
+              "address": "Sagaogurayama Tabuchiyamacho, Ukyo Ward, Kyoto, 616-8394, Japón",
+              "coordinates": {
+                "lat": 35.0094,
+                "lon": 135.6676
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=35.0094,135.6676](https://www.google.com/maps/search/?api=1&query=35.0094,135.6676)",
+              "visit_duration_minutes": 120,
+              "entrance_fee_jpy": 0,
+              "notes": "Llegar temprano para evitar multitudes. Tenryu-ji cercano (entrada de pago).",
+              "transit_from_previous": {
+                "from": "Hotel (Gion/Kawaramachi)",
+                "to": "Arashiyama",
+                "method": "tren",
+                "line_or_route": "JR Sagano Line (San-in) → Saga-Arashiyama Station",
+                "from_station": "Kawaramachi / Kyoto Station (según hotel)",
+                "to_station": "Saga-Arashiyama",
+                "estimated_time_minutes": 30,
+                "estimated_cost_jpy": 240
+              }
+            }
+          ]
+        },
+        {
+          "period": "tarde",
+          "activities": [
+            {
+              "name": "Kinkaku-ji (Pabellón Dorado)",
+              "type": "templo",
+              "address": "1 Kinkakujicho, Kita Ward, Kyoto, 603-8361, Japón",
+              "coordinates": {
+                "lat": 35.03937,
+                "lon": 135.72924
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=35.03937,135.72924](https://www.google.com/maps/search/?api=1&query=35.03937,135.72924)",
+              "visit_duration_minutes": 60,
+              "entrance_fee_jpy": 400,
+              "notes": "Inevitablemente turístico; disfrutar del jardín y fotos.",
+              "transit_from_previous": {
+                "from": "Arashiyama",
+                "to": "Kinkaku-ji",
+                "method": "tren + bus / taxi",
+                "line_or_route": "JR → bus local o taxi (más directo)",
+                "from_station": "Saga-Arashiyama",
+                "to_station": "Kinkaku-ji-mae (bus)",
+                "estimated_time_minutes": 50,
+                "estimated_cost_jpy": 500
+              }
+            },
+            {
+              "name": "Kiyomizu-dera",
+              "type": "templo",
+              "address": "294 Kiyomizu 1-chome, Higashiyama-ku, Kyoto 605-0862, Japón",
+              "coordinates": {
+                "lat": 34.994303,
+                "lon": 135.7844389
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=34.994303,135.7844389](https://www.google.com/maps/search/?api=1&query=34.994303,135.7844389)",
+              "visit_duration_minutes": 75,
+              "entrance_fee_jpy": 400,
+              "notes": "Vista sobre Kyoto desde la terraza; acceso por calles históricas (Sannen-zaka/Ninen-zaka).",
+              "transit_from_previous": {
+                "from": "Kinkaku-ji",
+                "to": "Kiyomizu-dera",
+                "method": "bus / taxi",
+                "line_or_route": "bus local (depende de punto exacto)",
+                "from_station": "Kinkaku-ji-mae (bus)",
+                "to_station": "Gojo-zaka / Kiyomizu-michi",
+                "estimated_time_minutes": 35,
+                "estimated_cost_jpy": 230
+              }
+            }
+          ]
+        },
+        {
+          "period": "noche",
+          "activities": [
+            {
+              "name": "Cena en Pontocho (río Kamogawa)",
+              "type": "restaurante|zona comercial",
+              "address": "Pontocho Alley, Nakagyo Ward / Higashiyama Ward (zona estrecha a lo largo del río)",
+              "coordinates": {
+                "lat": 35.0038,
+                "lon": 135.7681
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Pontocho+Kyoto](https://www.google.com/maps/search/?api=1&query=Pontocho+Kyoto)",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": null,
+              "notes": "Opciones desde económicas a alta cocina; reservar si buscas kaiseki.",
+              "transit_from_previous": {
+                "from": "Kiyomizu-dera",
+                "to": "Pontocho",
+                "method": "caminata / bus",
+                "line_or_route": "caminata por Higashiyama hacia centro",
+                "from_station": "Kiyomizu area",
+                "to_station": "Pontocho / Kawaramachi",
+                "estimated_time_minutes": 20,
+                "estimated_cost_jpy": 0
+              }
+            }
+          ]
+        }
+      ],
+      "alternatives_for_bad_weather": [
+        "Museo Internacional del Manga de Kyoto — [https://www.google.com/maps/search/?api=1&query=Kyoto+International+Manga+Museum](https://www.google.com/maps/search/?api=1&query=Kyoto+International+Manga+Museum)",
+        "Centros comerciales cubiertos: Kyoto Station Building (PORTA, Isetan) — [https://www.google.com/maps/search/?api=1&query=Kyoto+Station+shopping](https://www.google.com/maps/search/?api=1&query=Kyoto+Station+shopping)"
+      ],
+      "end_of_day_notes": "Volver a Gion/Kawaramachi. Reservar taxis en noche lluviosa."
+    },
+    {
+      "day": 6,
+      "city": "Kyoto → Osaka",
+      "summary": "Traslado corto a Osaka y día de exploración: Castillo de Osaka y Dotonbori por la noche.",
+      "segments": [
+        {
+          "period": "mañana",
+          "activities": [
+            {
+              "name": "Trayecto Kyoto Station → Osaka Station (JR Special Rapid / Shinkansen opcional)",
+              "type": "actividad",
+              "address": "Kyoto Station → Osaka Station",
+              "coordinates": {
+                "lat": 34.985849,
+                "lon": 135.758766
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Kyoto+Station](https://www.google.com/maps/search/?api=1&query=Kyoto+Station)",
+              "visit_duration_minutes": 45,
+              "entrance_fee_jpy": null,
+              "notes": "Tren JR Special Rapid (más barato y rápido). Shinkansen es opción pero no necesaria por la corta distancia.",
+              "transit_from_previous": {
+                "from": "Hotel en Kyoto",
+                "to": "Kyoto Station",
+                "method": "metro/tren/taxi",
+                "line_or_route": "según hotel",
+                "from_station": "Kawaramachi / Gion",
+                "to_station": "Kyoto",
+                "estimated_time_minutes": 15,
+                "estimated_cost_jpy": 220
+              }
+            }
+          ]
+        },
+        {
+          "period": "tarde",
+          "activities": [
+            {
+              "name": "Osaka Castle (parque y torre)",
+              "type": "parque|museo",
+              "address": "1-1 Osakajō, Chūō Ward, Osaka, 540-0002, Japón",
+              "coordinates": {
+                "lat": 34.68739,
+                "lon": 135.52575
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=34.68739,135.52575](https://www.google.com/maps/search/?api=1&query=34.68739,135.52575)",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": 600,
+              "notes": "Parque amplio y torre-museo. Buen lugar para fotos y paseo.",
+              "transit_from_previous": {
+                "from": "Osaka Station",
+                "to": "Osaka Castle",
+                "method": "metro + caminata",
+                "line_or_route": "JR to Osakajokoen / Osakajokoen Station",
+                "from_station": "Osaka",
+                "to_station": "Osakajokoen",
+                "estimated_time_minutes": 20,
+                "estimated_cost_jpy": 200
+              }
+            }
+          ]
+        },
+        {
+          "period": "noche",
+          "activities": [
+            {
+              "name": "Dotonbori (Namba) — cena y ocio",
+              "type": "zona comercial",
+              "address": "Dōtonbori, Chuo Ward, Osaka, 542-0071, Japón (zona principal alrededor del canal)",
+              "coordinates": {
+                "lat": 34.66872,
+                "lon": 135.5013
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=34.66872,135.50130](https://www.google.com/maps/search/?api=1&query=34.66872,135.50130)",
+              "visit_duration_minutes": 120,
+              "entrance_fee_jpy": 0,
+              "notes": "Probablemente el área más animada por la noche: takoyaki, okonomiyaki, letreros icónicos (Glico).",
+              "transit_from_previous": {
+                "from": "Osaka Castle",
+                "to": "Dotonbori (Namba)",
+                "method": "metro",
+                "line_or_route": "Osaka Loop Line / Metro (transfer)",
+                "from_station": "Osakajokoen",
+                "to_station": "Namba",
+                "estimated_time_minutes": 25,
+                "estimated_cost_jpy": 230
+              }
+            }
+          ]
+        }
+      ],
+      "alternatives_for_bad_weather": [
+        "Umeda Sky Building (observatorio interior) — [https://www.google.com/maps/search/?api=1&query=Umeda+Sky+Building+Osaka](https://www.google.com/maps/search/?api=1&query=Umeda+Sky+Building+Osaka)",
+        "Grand Front Osaka (centro comercial cubierto) — [https://www.google.com/maps/search/?api=1&query=Grand+Front+Osaka](https://www.google.com/maps/search/?api=1&query=Grand+Front+Osaka)"
+      ],
+      "end_of_day_notes": "Alojamiento recomendado en Namba (vida nocturna) o Umeda (transporte)."
+    },
+    {
+      "day": 7,
+      "city": "Osaka",
+      "summary": "Último día: compras y despedida — Umeda (mirador) por la mañana y tarde libre en Namba antes del regreso.",
+      "segments": [
+        {
+          "period": "mañana",
+          "activities": [
+            {
+              "name": "Umeda Sky Building (Floating Garden Observatory)",
+              "type": "actividad",
+              "address": "1-1-88 Oyodonaka, Kita Ward, Osaka, 531-6023, Japón",
+              "coordinates": {
+                "lat": 34.705215,
+                "lon": 135.490799
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=34.705215,135.490799](https://www.google.com/maps/search/?api=1&query=34.705215,135.490799)",
+              "visit_duration_minutes": 60,
+              "entrance_fee_jpy": 1500,
+              "notes": "Buena vista de la ciudad; ideal para fotos de despedida.",
+              "transit_from_previous": {
+                "from": "Hotel en Namba/Umeda",
+                "to": "Umeda Sky Building",
+                "method": "metro/tren",
+                "line_or_route": "JR o Metro (dependiendo de hotel)",
+                "from_station": "Namba / Osaka",
+                "to_station": "Umeda",
+                "estimated_time_minutes": 15,
+                "estimated_cost_jpy": 200
+              }
+            }
+          ]
+        },
+        {
+          "period": "tarde",
+          "activities": [
+            {
+              "name": "Compras y paseo en Namba (Shinsaibashi / Dotonbori)",
+              "type": "zona comercial",
+              "address": "Shinsaibashi-Suji & Dotonbori, Chuo Ward, Osaka",
+              "coordinates": {
+                "lat": 34.6739,
+                "lon": 135.5017
+              },
+              "google_maps_url": "[https://www.google.com/maps/search/?api=1&query=Shinsaibashi+Osaka](https://www.google.com/maps/search/?api=1&query=Shinsaibashi+Osaka)",
+              "visit_duration_minutes": 180,
+              "entrance_fee_jpy": 0,
+              "notes": "Últimas compras y comida antes de salida. Dejar tiempo suficiente para traslado al aeropuerto.",
+              "transit_from_previous": {
+                "from": "Umeda Sky Building",
+                "to": "Namba (Shinsaibashi)",
+                "method": "metro",
+                "line_or_route": "Metro Midosuji Line Umeda → Namba",
+                "from_station": "Umeda",
+                "to_station": "Namba",
+                "estimated_time_minutes": 15,
+                "estimated_cost_jpy": 240
+              }
+            }
+          ]
+        },
+        {
+          "period": "noche",
+          "activities": [
+            {
+              "name": "Traslado al aeropuerto (Kansai o Itami) / Salida",
+              "type": "actividad",
+              "address": "VERIFICAR: aeropuerto elegido (KIX o ITM)",
+              "coordinates": {
+                "lat": null,
+                "lon": null
+              },
+              "google_maps_url": "VERIFICAR: usar búsqueda por 'Kansai International Airport' o 'Itami Airport' en Google Maps",
+              "visit_duration_minutes": 90,
+              "entrance_fee_jpy": null,
+              "notes": "Dejar margen de 3 horas para vuelos internacionales. Transporte: Nankai Airport Express (KIX) o limousine bus / taxi (ITM).",
+              "transit_from_previous": {
+                "from": "Namba / Hotel",
+                "to": "Kansai International Airport (KIX) / Itami (ITM)",
+                "method": "tren/autobús/taxi",
+                "line_or_route": "Nankai Line Airport Express (Namba→KIX) / Limousine bus a ITM",
+                "from_station": "Namba",
+                "to_station": "Kansai Airport Station / Osaka Airport (Itami bus stop)",
+                "estimated_time_minutes": 60,
+                "estimated_cost_jpy": 1200
+              }
+            }
+          ]
+        }
+      ],
+      "alternatives_for_bad_weather": [
+        "CityMall y áreas cubiertas en Namba/Umeda (Grand Front, Namba Parks) — enlaces en Google Maps",
+        "Museos cubiertos en Osaka (por ejemplo, Osaka Aquarium Kaiyukan) — [https://www.google.com/maps/search/?api=1&query=Kaiyukan+Osaka](https://www.google.com/maps/search/?api=1&query=Kaiyukan+Osaka)"
+      ],
+      "end_of_day_notes": "Asegurar transporte al aeropuerto con tiempo. Última cena en Dotonbori si el horario lo permite."
+    }
+  ],
+  "intercity_travel": [
+    {
+      "from_city": "Tokyo",
+      "to_city": "Kyoto",
+      "recommended_option": "shinkansen",
+      "departure_station": "Tokyo Station",
+      "arrival_station": "Kyoto Station",
+      "estimated_duration_minutes": 140,
+      "estimated_cost_jpy": 14000,
+      "booking_note": "Reservar con antelación en temporada alta. Si tienes JR Pass, usar Hikari (Nozomi no incluido en JR Pass para algunas tarifas) — VERIFICAR tipo de tren permitido según pase."
+    },
+    {
+      "from_city": "Kyoto",
+      "to_city": "Osaka",
+      "recommended_option": "tren expreso",
+      "departure_station": "Kyoto Station",
+      "arrival_station": "Osaka Station / Namba (según destino)",
+      "estimated_duration_minutes": 30,
+      "estimated_cost_jpy": 800,
+      "booking_note": "No es necesario reservar con mucha antelación; trenes frecuentes. Para ahorro, usar JR Special Rapid (incluido en JR Pass)."
+    },
+    {
+      "from_city": "Tokyo",
+      "to_city": "Kyoto (alternativa económica)",
+      "recommended_option": "autobús nocturno",
+      "departure_station": "VARIAS (Shinjuku / Tokyo Station dependiendo de operador)",
+      "arrival_station": "VARIAS (Kyoto Station bus terminal)",
+      "estimated_duration_minutes": 480,
+      "estimated_cost_jpy": 4000,
+      "booking_note": "Ahorra en alojamiento pero viaje más largo; reservar con antelación en temporada alta."
+    }
+  ],
+  "lodging_recommendations": [
+    {
+      "city": "Tokyo",
+      "recommended_areas": [
+        {
+          "area_name": "Shinjuku",
+          "why": "Buen transporte, vida nocturna y opciones de alojamiento 3★; céntrico para conexiones.",
+          "price_range_per_night_jpy": "9000 - 18000"
+        },
+        {
+          "area_name": "Shibuya",
+          "why": "Ambiente joven, fácil acceso a atracciones; buena para primera estancia.",
+          "price_range_per_night_jpy": "9000 - 18000"
+        }
+      ]
+    },
+    {
+      "city": "Kyoto",
+      "recommended_areas": [
+        {
+          "area_name": "Gion / Kawaramachi",
+          "why": "Cerca de templos, ambiente tradicional y buena oferta de restaurantes.",
+          "price_range_per_night_jpy": "8000 - 16000"
+        },
+        {
+          "area_name": "Kyoto Station area",
+          "why": "Muy práctica para transfers y equipaje; buses y trenes directos.",
+          "price_range_per_night_jpy": "7000 - 14000"
+        }
+      ]
+    },
+    {
+      "city": "Osaka",
+      "recommended_areas": [
+        {
+          "area_name": "Namba (Dotonbori / Shinsaibashi)",
+          "why": "Vida nocturna y gastronomía; ideal para quienes buscan animación.",
+          "price_range_per_night_jpy": "7000 - 15000"
+        },
+        {
+          "area_name": "Umeda (Kita)",
+          "why": "Mejor para conexiones y barrios más tranquilos; buena para negocios.",
+          "price_range_per_night_jpy": "8000 - 16000"
+        }
+      ]
+    }
+  ],
+  "budget_breakdown": {
+    "total_jpy": 150000,
+    "per_category": {
+      "accommodation": 72000,
+      "intercity_transport": 16000,
+      "local_transport": 6000,
+      "meals": 21000,
+      "activities_and_entrances": 8000,
+      "misc": 6000
+    },
+    "notes": "Estimado aproximado para 1 persona con alojamiento en hoteles 3★, comidas mixtas y entradas básicas. Marcar como 'VERIFICAR' si buscas niveles más altos o temporada alta."
+  },
+  "logistics_tips": "VERIFICAR horarios y tarifas antes de viajar. Considera si te conviene el JR Pass: para este itinerario (solo Tokyo→Kyoto y Kyoto→Osaka) puede no ser rentable a menos que añadas más viajes; compara coste del shinkansen individual (~14,000 JPY) con precio del pase. Compra tarjetas IC (Suica/Pasmo/ICOCA) al llegar para transporte local y pagos pequeños. Reservar shinkansen en temporada alta (Golden Week, Obon, Año Nuevo). Apps útiles: Google Maps (ruta y horarios), Hyperdia/Jorudan (horarios tren), Navitime. En estaciones grandes, permite 15–30 min para cambiar de andén. Para restaurantes populares y teamLab, reservar con antelación. Etiqueta: silencio en trenes, hacer fila ordenada, no comer caminando en zonas sensibles, respetar áreas sagradas en templos. Cambia algo de efectivo (yen) a la llegada; no todos los sitios aceptan tarjeta.",
+  "verification_warnings": [
+    "VERIFICAR: Direcciones exactas de hoteles y restaurantes — he marcado direcciones de monumentos y templos con fuentes públicas, pero los alojamientos y restaurantes concretos deben confirmarse.",
+    "VERIFICAR: Tarifas de entradas (Skytree, museos, Kiyomizu-dera, Kinkaku-ji) pueden variar; comprobar en páginas oficiales antes de comprar.",
+    "VERIFICAR: Horarios de apertura y días de cierre de templos, restaurantes y atracciones (ej. teamLab, mercados).",
+    "VERIFICAR: Costes de transporte estimados (tarifas exactas dependen de la línea, tipo de tren y clase).",
+    "VERIFICAR: Google Maps URLs generadas por coordenadas incluidas; si se requiere dirección exacta buscar por nombre+ciudad como respaldo."
+  ]
+}
